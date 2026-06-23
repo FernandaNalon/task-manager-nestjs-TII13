@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Gerenciador de Tarefas</h1>
+        <form id="formTarefa">
+            <input type="text" name="titulo" id="titulo" placeholder="Titulo da Tarefa">
+            <textarea name="descricao" id="descricao" placeholder="Descrição da Tarefa"></textarea>
+            <select name="status" id="status">
+                <option value="pendente">Pendente</option>
+                <option value="em andamento">Em andamento</option>
+                <option value="concluida">Concluida</option>
+            </select>
+            <button type="submit">Cadastrar Tarefa</button>
+        </form>
+        <section id="listarTarefas"></section>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/tarefas.js"></script>
+</body>
+</html>
